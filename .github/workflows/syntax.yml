@@ -16,8 +16,7 @@ jobs:
       run: sudo apt-get update && sudo apt-get install xorg-dev libxrandr-dev libxcursor-dev libudev-dev libopenal-dev libflac-dev libvorbis-dev libgl1-mesa-dev libegl1-mesa-dev libdrm-dev libgbm-dev xvfb fluxbox ccache gcovr
 
     - name: Check TEST_Animate2D.cpp - Skipped until fixed
-      run: # [log] TEST_Animate2D.cpp needs fixing
-      #run: g++ -fsyntax-only examples/TEST_Animate2D.cpp -I.
+      run: echo "[log] TEST_Animate2D.cpp needs fixing"
 
     - name: Check TEST_Camera2D.cpp
       run: g++ -fsyntax-only examples/TEST_Camera2D.cpp -I.
